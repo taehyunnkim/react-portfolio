@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+/* VARIABLES  */
+$primary-color: black;
+$secondary-color: #162447;
+$font: 'Maven Pro', sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+.App {
+  width: 700px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 10px 0px;
+  
+  h1 {
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/** HOME DASHBOARD **/
+#dashboard {
+  height: 500px;
+
+  h1 {
+    font-size: 1.3em;
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+/* Project List */
+
+.project-item {
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+.project-active {
+  background-color: #f9f9f9!important;
+}
+
+.project-item-title , .project-item-description {
+  margin: 0;
+}
+
+.project-item-title {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: $secondary-color;
+}
+
+.project-item-description {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.project-item-description-long {
+  font-size: 0.8em;
+}
+
+.project-item-date {
+  margin: 0 0 0 auto;
+  font-size: 0.8em;
+  color: gray;
+}
+
+.project-details {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0;
+  padding: 0px 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      font-weight: 500;
+      padding-right: 10px;
+      font-size: 0.9em;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    h3 {
+      border-radius: 2px;
+      margin: 10px 10px;
+      padding: 5px 10px;
+      background-color: $primary-color;
+      font-size: 0.8em;
+      color: white;
+      display: inline-block;
+    }
+  }
+}
+
+.open-details {
+  padding: 10px 20px;
+  height: 100px;
+  opacity: 1;
+}
+
+/** PROJECT **/
+
+#project {
+}
+
+/* SKILLS */
+.react {
+  color: #61dbfb;
+}
+
+.redux {
+  color: #764abc;
+}
+
+.javascript {
+  color: #f0db4f;
+}
+
+.gsap {
+  color: rgb(30, 175, 30);
+}
+
+.rlang {
+  color: #165CAA;
+}
+
+.three {
+  color: rgb(126, 185, 252);
+}
+
+.node {
+  color: #68A063;
+}
+
+.photoshop {
+  color: #8bc3fc;
+}
+
+.csharp {
+  color: indigo;
+}
+
+.p5 {
+  color: rgb(255, 43, 96);
+}
+
+.firebase {
+  color: #FFA000;
+}

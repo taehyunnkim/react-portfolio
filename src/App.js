@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Dashboard} />
+          <Route exact path='/react-portfolio' component={Dashboard} />
           <Route path='/project/:id' component={Project} />
         </Switch>
       </div>

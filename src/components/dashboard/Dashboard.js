@@ -7,6 +7,7 @@ class Dashboard extends Component {
     const { projects } = this.props;
     return (
       <div id='dashboard'>
+        <h1>Projects</h1>
         <ProjectList projects={projects} />
       </div>
     )
